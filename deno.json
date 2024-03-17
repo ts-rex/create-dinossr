@@ -6,12 +6,11 @@
     "dev": "deno run --watch main.ts"
   },
   "imports": {
-    "@ssr/dinossr": "jsr:@ssr/dinossr@^0.28.0",
     "@std/fs": "jsr:@std/fs@^0.220.1",
     "@std/path": "jsr:@std/path@^0.220.1"
   },
   "publish": {
-    "include": ["./template", "./main.ts"],
+    "include": ["./template", "./main.ts", "./deno.json", "./deno.lock"],
     "exclude": ["./.vscode"]
   }
 }
