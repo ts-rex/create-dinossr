@@ -1,7 +1,7 @@
 {
   "name": "@ts-rex/create-dinossr",
   "version": "0.0.1",
-  "exports": "./mod.ts",
+  "exports": "./main.ts",
   "tasks": {
     "dev": "deno run --watch main.ts"
   },
@@ -9,5 +9,9 @@
     "@ssr/dinossr": "jsr:@ssr/dinossr@^0.28.0",
     "@std/fs": "jsr:@std/fs@^0.220.1",
     "@std/path": "jsr:@std/path@^0.220.1"
+  },
+  "publish": {
+    "include": ["./template", "./main.ts"],
+    "exclude": ["./.vscode"]
   }
 }
